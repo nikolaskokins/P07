@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+	#container {position: relative;}
+	#container canvas, #BoundingBox {position: absolute;}
+</style>
+<script>var mouse = 0;</script>
+<script type="text/javascript" src="color_change.js"></script>
+<script type="text/javascript" src="render.js"></script>
+<script>
+window.onload=function() {
+	var mouse = 0;
+	render();
+}
+</script>
+</head>
+<div id="container">
+	<canvas width=1000 height=1000 id="main_container"></canvas>
+	<div id="BoundingBox" style="height: 180px; width: 160px; top: 0; left: 0;" onmouseover="Red(event)" onmouseout="Clear(event)"></div>
+	<div id="BoundingBox" style="height: 120px; width: 140px; top: 200; left: 0;" onmouseover="Red(event)" onmouseout="Clear(event)"></div>
+	<div id="BoundingBox" style="height: 120px; width: 120px; top: 0; left: 200;" onmouseover="Red(event)" onmouseout="Clear(event)"></div>
+	<div id="BoundingBox" style="height: 120px; width: 140px; top: 200; left: 190;" onmouseover="Red(event)" onmouseout="Clear(event)"></div>
+	<div id="BoundingBox" style="height: 180px; width: 160px; top: 0; left: 400;" onmouseover="Red(event)" onmouseout="Clear(event)"></div>
+	<div id="BoundingBox" style="height: 190px; width: 120px; top: 200; left: 400;" onmouseover="Red(event)" onmouseout="Clear(event)"></div>
+</div>
+</html>
